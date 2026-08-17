@@ -1,0 +1,257 @@
+/* Cores do projeto */
+:root {
+    --azul-principal: #123b5d;
+    --azul-secundario: #2a7f9e;
+    --azul-claro: #eaf4f7;
+
+    --areia: #f4e9d8;
+    --coral: #e9785a;
+
+    --texto-principal: #183247;
+    --texto-secundario: #5f6f7a;
+
+    --branco: #ffffff;
+    --fundo: #f8fafb;
+}
+
+
+/* Configurações gerais */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto-principal);
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: var(--branco);
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e9ec;
+}
+
+.navbar-brand {
+    color: var(--azul-principal);
+    font-family: Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: var(--azul-secundario);
+}
+
+.nav-link {
+    color: var(--texto-principal);
+    margin-left: 15px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--azul-secundario);
+}
+
+
+/* Hero */
+.hero {
+    background-color: var(--azul-claro);
+    padding: 90px 0 70px;
+}
+
+.hero-subtitulo {
+    color: var(--azul-secundario);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: var(--azul-principal);
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-texto {
+    color: var(--texto-secundario);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 620px;
+    margin-bottom: 30px;
+}
+
+
+/* Botões */
+.btn-primary {
+    background-color: var(--coral);
+    border-color: var(--coral);
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #cf6048;
+    border-color: #cf6048;
+}
+
+
+/* Imagem do hero */
+.hero-imagem {
+    position: relative;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.hero-legenda {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(18, 59, 93, 0.9);
+    color: var(--branco);
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+
+/* Pesquisa */
+.pesquisa {
+    margin-top: -35px;
+    position: relative;
+}
+
+.pesquisa-card {
+    background-color: var(--branco);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(18, 59, 93, 0.08);
+}
+
+.pesquisa-card .form-label {
+    color: var(--azul-principal);
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #ccd7df;
+    padding: 12px 14px;
+}
+
+.form-control:focus {
+    border-color: var(--azul-secundario);
+    box-shadow: 0 0 0 0.2rem rgba(42, 127, 158, 0.12);
+}
+
+
+/* Seções */
+.secao {
+    padding: 90px 0;
+}
+
+.secao-clara {
+    background-color: var(--branco);
+}
+
+
+/* Títulos das seções */
+.titulo-secao {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.titulo-secao span {
+    color: var(--coral);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    color: var(--azul-principal);
+    font-family: Georgia, serif;
+    font-size: 2.3rem;
+    margin: 10px 0 15px;
+}
+
+.titulo-secao p {
+    color: var(--texto-secundario);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #dce8ee;
+}
+
+
+/* Responsividade */
+@media (max-width: 991px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-imagem img {
+        height: 350px;
+    }
+
+    .pesquisa {
+        margin-top: 0;
+        padding: 25px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-texto {
+        font-size: 1rem;
+    }
+
+    .hero-imagem img {
+        height: 280px;
+    }
+
+    .secao {
+        padding: 65px 0;
+    }
+
+    .titulo-secao h2 {
+        font-size: 1.9rem;
+    }
+
+}
