@@ -12,3 +12,23 @@ form.addEventListener("submit", function (event) {
  form.reset();
  form.classList.remove("was-validated");
 });
+
+// Luiz - pesquisa e filtro dos destinos ==================
+
+<input
+    type="search"
+    id="pesquisaDestino"
+    class="form-control"
+    placeholder="Ex.: Manaus, Rio de Janeiro, Salvador...">
+
+<button
+    type="button"
+    id="btnPesquisar"
+    class="btn btn-primary w-100">
+
+    Pesquisar destinos
+
+</button>
+</input>
+
+// ========================================================
