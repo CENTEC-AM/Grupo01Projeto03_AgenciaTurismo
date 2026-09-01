@@ -331,3 +331,41 @@ footer p {
  color: var(--azul-principal);
 }
 
+/* Cards de pacotes */
+.pacote {
+   background-color: var(--branco);
+   border-radius: 18px;
+   overflow: hidden;
+   box-shadow: 0 8px 24px rgba(18, 59, 93, 0.08);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pacote:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 14px 30px rgba(18, 59, 93, 0.12);
+}
+.pacote img {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+.pacote-local {
+   color: var(--coral);
+   font-size: 0.75rem;
+   font-weight: bold;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.pacote-titulo {
+   color: var(--azul-principal);
+   font-family: Georgia, serif;
+   margin-top: 8px;
+}
+.pacote-descricao {
+   color: var(--texto-secundario);
+   line-height: 1.6;
+}
+.pacote-preco {
+   color: var(--azul-principal);
+   font-size: 1.2rem;
+   font-weight: bold;
+}
