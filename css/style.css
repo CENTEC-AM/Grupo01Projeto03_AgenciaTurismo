@@ -256,6 +256,7 @@ footer p {
 
 }
 
+
 /* Galeria */
 .galeria-img {
    width: 100%;
@@ -298,3 +299,35 @@ footer p {
    color: var(--texto-secundario);
    font-size: 0.85rem;
 }
+
+/* Formulario */
+#orcamento .form-label {
+ color: var(--azul-principal);
+ font-weight: bold;
+}
+#orcamento .form-control,
+#orcamento .form-select {
+ border-color: #ccd7df;
+ padding: 12px 14px;
+}
+#orcamento .form-control:focus,
+#orcamento .form-select:focus {
+ border-color: var(--azul-secundario);
+ box-shadow: 0 0 0 0.2rem rgba(42, 127, 158, 0.12);
+}
+/* FAQ */
+.accordion-item {
+ border-color: #e5e9ec;
+ border-radius: 12px;
+ overflow: hidden;
+ margin-bottom: 10px;
+}
+.accordion-button {
+ color: var(--azul-principal);
+ font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+ background-color: var(--azul-claro);
+ color: var(--azul-principal);
+}
+
