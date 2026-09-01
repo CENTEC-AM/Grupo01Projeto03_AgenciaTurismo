@@ -1,3 +1,11 @@
+// Interacao da galeria
+const imagensGaleria = document.querySelectorAll(".galeria-img");
+imagensGaleria.forEach(function (imagem) {
+   imagem.addEventListener("click", function () {
+       console.log("Imagem selecionada:", imagem.alt);
+   });
+});
+
 const form = document.getElementById("formOrcamento");
 const mensagemSucesso = document.getElementById("mensagemSucesso");
 form.addEventListener("submit", function (event) {

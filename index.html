@@ -1,376 +1,421 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>FlyTech Turismo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap 5 via CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <title>FlyTech Turismo</title>
 
-    <!-- CSS do projeto -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Bootstrap 5 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- CABEÇALHO DA PÁGINA -->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <!-- Logo / Nome da agência -->
-          <a class="navbar-brand" href="#inicio"> ✈ FlyTech Turismo </a>
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <!-- Botão do menu para telas menores -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Abrir menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Menu da página -->
-          <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#inicio"> Início </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#destinos"> Destinos </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#galeria"> Galeria </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#depoimentos"> Depoimentos </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#orcamento"> Orçamento </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#faq"> FAQ </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main>
-      <!-- HERO -->
-      <section id="inicio" class="hero">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <!-- TEXTO PRINCIPAL -->
-            <div class="col-lg-7">
-              <p class="hero-subtitulo text-uppercase">
-                Sua próxima aventura começa aqui
-              </p>
-
-              <h1>
-                Descubra novos destinos e viva experiências inesquecíveis.
-              </h1>
-
-              <p class="hero-texto">
-                Encontre destinos incríveis, conheça nossos pacotes turísticos e
-                planeje sua próxima viagem com a Explore Mundo.
-              </p>
-
-              <a href="#destinos" class="btn btn-primary">
-                Explorar destinos
-              </a>
-            </div>
-
-            <!-- IMAGEM DO HERO -->
-            <div class="col-lg-5">
-              <div class="hero-imagem">
-                <img
-                  src="assets/img/hero-viagem.jpg"
-                  alt="Paisagem de um destino turístico"
-                />
-
-                <div class="hero-legenda">
-                  <span>✈ Viaje com a FlyTech</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PESQUISA DE DESTINO -->
-      <section class="pesquisa">
-        <div class="container">
-          <div class="pesquisa-card">
-            <div class="row align-items-end g-3">
-              <div class="col-lg-8">
-                <label for="pesquisaDestino" class="form-label">
-                  Encontre seu destino
-                </label>
-
-                <input
-                  type="search"
-                  id="pesquisaDestino"
-                  class="form-control"
-                  placeholder="Ex.: Manaus, Rio de Janeiro, Salvador..."
-                />
-              </div>
-
-              <div class="col-lg-4">
-                <button
-                  type="button"
-                  id="btnPesquisar"
-                  class="btn btn-primary w-100"
-                >
-                  Pesquisar destinos
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PACOTES TURÍSTICOS -->
-      <!-- Homar trabalhará nesta seção -->
-      <section id="destinos" class="secao">
-        <div class="container">
-          <div class="titulo-secao">
-            <span>DESTINOS</span>
-
-            <h2>Pacotes turísticos</h2>
-
-            <p>
-              Escolha o próximo lugar para transformar em uma memória
-              inesquecível.
-            </p>
-          </div>
-
-          <div id="listaDestinos">
-            <!-- Cards serão adicionados pelo Homar -->
-          </div>
-        </div>
-      </section>
-
-      <!-- GALERIA -->
-      <!-- Paulo trabalhará nesta seção -->
-      <section id="galeria" class="secao secao-clara">
-        <div class="container">
-          <div class="titulo-secao">
-            <span>GALERIA</span>
-
-            <h2>Lugares que inspiram</h2>
-
-            <p>
-              Uma pequena prévia dos destinos que podem fazer parte da sua
-              próxima viagem.
-            </p>
-          </div>
-
-          <!-- Paulo desenvolverá a galeria aqui -->
-        </div>
-      </section>
-
-      <!-- DEPOIMENTOS -->
-      <!-- Paulo trabalhará nesta seção -->
-      <section id="depoimentos" class="secao">
-        <div class="container">
-          <div class="titulo-secao">
-            <span>DEPOIMENTOS</span>
-
-            <h2>Quem viajou com a gente</h2>
-          </div>
-
-          <!-- Paulo desenvolverá os depoimentos aqui -->
-        </div>
-      </section>
-
-      <!-- ORÇAMENTO -->
-      <!-- Jonatan trabalhará nesta seção -->
-      <section id="orcamento" class="secao secao-clara">
-        <div class="container">
-          <div class="titulo-secao">
-            <span>ORÇAMENTO</span>
-
-            <h2>Planeje sua próxima viagem</h2>
-
-            <p>
-              Preencha o formulário e conte para nós como seria a viagem dos
-              seus sonhos.
-            </p>
-          </div>
-          <!-- formulario de orcamento -->
-
-          <form id="formOrcamento" class="row g-3 needs-validation" novalidate>
-            <div class="col-md-6">
-              <label for="nome" class="form-label">Nome</label>
-              <input
-                type="text"
-                id="nome"
-                name="nome"
-                class="form-control"
-                required
-              />
-              <div class="invalid-feedback">Informe seu nome.</div>
-            </div>
-            <div class="col-md-6">
-              <label for="email" class="form-label">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form-control"
-                required
-              />
-              <div class="invalid-feedback">Informe um e-mail valido.</div>
-            </div>
-            <div class="col-md-6">
-              <label for="destino" class="form-label">Destino</label>
-              <select id="destino" name="destino" class="form-select" required>
-                <option value="">Selecione</option>
-                <option>Manaus</option>
-                <option>Rio de Janeiro</option>
-                <option>Salvador</option>
-              </select>
-              <div class="invalid-feedback">Escolha um destino.</div>
-            </div>
-            <div class="col-md-3">
-              <label for="pessoas" class="form-label">Pessoas</label>
-              <input
-                type="number"
-                id="pessoas"
-                name="pessoas"
-                class="form-control"
-                min="1"
-                required
-              />
-              <div class="invalid-feedback">
-                Informe a quantidade de pessoas.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="data" class="form-label">Data</label>
-              <input
-                type="date"
-                id="data"
-                name="data"
-                class="form-control"
-                required
-              />
-              <div class="invalid-feedback">Informe a data.</div>
-            </div>
-            <div class="col-12">
-              <label for="mensagem" class="form-label">Observacoes</label>
-              <textarea
-                id="mensagem"
-                name="mensagem"
-                class="form-control"
-                rows="5"
-                placeholder="Conte um
-pouco sobre a viagem..."
-              ></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">
-                Enviar orcamento
-              </button>
-            </div>
-            <div
-              id="mensagemSucesso"
-              class="alert alert-success d-none mt-3"
-              role="alert"
-            >
-              Orcamento enviado com sucesso!
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-       
-
-      <!-- Jonatan trabalhará nesta seção -->
-      <section id="faq" class="secao">
-        <div class="container">
-          <div class="titulo-secao">
-            <span>FAQ</span>
-
-            <h2>Perguntas frequentes</h2>
-          </div>
-
-          <section id="faq" class="secao">
- <div class="container">
- <div class="titulo-secao">
- <span>FAQ</span>
- <h2>Perguntas frequentes</h2>
- </div>
- <div class="accordion" id="faqAccordion">
- <div class="accordion-item">
- <h2 class="accordion-header">
- <button class="accordion-button" type="button" data-bs-toggle="collapse"
-data-bs-target="#faq1">
- Posso montar um pacote personalizado?
- </button>
- </h2>
- <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
- <div class="accordion-body">
- Sim. A equipe pode adaptar destino, duracao e quantidade de pessoas.
- </div>
- </div>
- </div>
- <div class="accordion-item">
- <h2 class="accordion-header">
- <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-data-bs-target="#faq2">
- Quanto tempo leva para receber o orcamento?
- </button>
- </h2>
- <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
- <div class="accordion-body">
- A equipe entra em contato depois do envio do formulario.
- </div>
- </div>
- </div>
- </div>
- </div>
-</section>
-        </div>
-      </section>
-    </main>
-
-    <!-- RODAPÉ -->
-    <footer>
+<body>
+  <!-- CABEÇALHO DA PÁGINA -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="mb-0">© 2026 Explore o Mundo</p>
+        <!-- Logo / Nome da agência -->
+        <a class="navbar-brand" href="#inicio"> ✈ FlyTech Turismo </a>
+
+        <!-- Botão do menu para telas menores -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu da página -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio"> Início </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#destinos"> Destinos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria"> Galeria </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#depoimentos"> Depoimentos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#orcamento"> Orçamento </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#faq"> FAQ </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- TEXTO PRINCIPAL -->
+          <div class="col-lg-7">
+            <p class="hero-subtitulo text-uppercase">
+              Sua próxima aventura começa aqui
+            </p>
+
+            <h1>
+              Descubra novos destinos e viva experiências inesquecíveis.
+            </h1>
+
+            <p class="hero-texto">
+              Encontre destinos incríveis, conheça nossos pacotes turísticos e
+              planeje sua próxima viagem com a Explore Mundo.
+            </p>
+
+            <a href="#destinos" class="btn btn-primary">
+              Explorar destinos
+            </a>
           </div>
 
-          <div class="col-md-6 text-md-end">
-            <p class="mb-0">FlyTech</p>
+          <!-- IMAGEM DO HERO -->
+          <div class="col-lg-5">
+            <div class="hero-imagem">
+              <img src="assets/img/hero-viagem.jpg" alt="Paisagem de um destino turístico" />
+
+              <div class="hero-legenda">
+                <span>✈ Viaje com a FlyTech</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- PESQUISA DE DESTINO -->
+    <section class="pesquisa">
+      <div class="container">
+        <div class="pesquisa-card">
+          <div class="row align-items-end g-3">
+            <div class="col-lg-8">
+              <label for="pesquisaDestino" class="form-label">
+                Encontre seu destino
+              </label>
 
-    <!-- JavaScript do projeto -->
-    <script src="js/script.js"></script>
-  </body>
+              <input type="search" id="pesquisaDestino" class="form-control"
+                placeholder="Ex.: Manaus, Rio de Janeiro, Salvador..." />
+            </div>
+
+            <div class="col-lg-4">
+              <button type="button" id="btnPesquisar" class="btn btn-primary w-100">
+                Pesquisar destinos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTES TURÍSTICOS -->
+    <!-- Homar trabalhará nesta seção -->
+    <section id="destinos" class="secao">
+      <div class="container">
+        <div class="titulo-secao">
+          <span>DESTINOS</span>
+
+          <h2>Pacotes turísticos</h2>
+
+          <p>
+            Escolha o próximo lugar para transformar em uma memória
+            inesquecível.
+          </p>
+        </div>
+
+        <div id="listaDestinos">
+          <!-- Cards serão adicionados pelo Homar -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="secao secao-clara">
+      <div class="container">
+        <div class="titulo-secao">
+          <span>GALERIA</span>
+
+          <h2>Lugares que inspiram</h2>
+
+          <p>
+            Uma pequena prévia dos destinos que podem fazer parte da sua
+            próxima viagem.
+          </p>
+        </div>
+
+
+        <div class="row g-3 galeria-grid">
+          <div class="col-6 col-lg-4">
+            <img src="assets/img/galeria-01.jpg" class="galeria-img" alt="praia / mar">
+          </div>
+          <div class="col-6 col-lg-4">
+            <img src="assets/img/galeria-02.jpg" class="galeria-img" alt="Paisagem natural de uma viagem">
+          </div>
+          <div class="col-12 col-lg-4">
+            <img src="assets/img/galeria-03.jpg" class="galeria-img">
+          </div>
+          <div class="col-6 col-lg-6">
+            <img src="assets/img/galeria-04.jpg" class="galeria-img" alt="Cidade turistica durante uma viagem">
+          </div>
+          <div class="col-6 col-lg-6">
+            <img src="assets/img/galeria-05.jpg" class="galeria-img" alt="Paisagem de por do sol em destino turistico">
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+
+    <section id="depoimentos" class="secao">
+      <div class="container">
+        <div class="titulo-secao">
+          <span>DEPOIMENTOS</span>
+
+          <h2>Quem viajou com a gente</h2>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Depoimento 1 -->
+          <div class="col-md-4">
+
+            <article class="depoimento">
+
+              <p>
+                "A areia nos meus pés, o vento no meu rosto e o som das ondas... Obrigado FlyTech por realizar meu sonho de férias na praia! 🌊🌴❤️"
+              </p>
+
+              <div class="depoimento-pessoa">
+
+                <img src="assets/img/marinaCosta.jpg" alt="Foto de cliente">
+
+                <div>
+
+                  <strong>Marina Costa</strong>
+
+                  <span>Manaus - AM</span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- Depoimento 2 -->
+          <div class="col-md-4">
+
+            <article class="depoimento">
+
+              <p>
+                "Piscina, sol e bons drinks: a receita perfeita para relaxar! Obrigado FlyTech por essa viagem inesquecível! 🍹☀️😎"
+              </p>
+
+              <div class="depoimento-pessoa">
+
+                <img src="assets/img/lucasAlmeida.jpg" alt="Foto de cliente">
+
+                <div>
+
+                  <strong>Lucas Almeida</strong>
+
+                  <span>São Paulo - SP</span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- Depoimento 3 -->
+          <div class="col-md-4">
+
+            <article class="depoimento">
+
+              <p>
+                "Caminhar por trilhas, admirar a natureza e respirar ar puro... Obrigado FlyTech por essa experiência incrível de conexão com o meio ambiente! 🌿🚶‍♂️⛰️"
+              </p>
+
+              <div class="depoimento-pessoa">
+
+                <img src="assets/img/camilaSantos.jpg" alt="Foto de cliente">
+
+                <div>
+
+                  <strong>Camila Santos</strong>
+
+                  <span>Rio de Janeiro - RJ</span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+
+    <section id="orcamento" class="secao secao-clara">
+      <div class="container">
+        <div class="titulo-secao">
+          <span>ORÇAMENTO</span>
+
+          <h2>Planeje sua próxima viagem</h2>
+
+          <p>
+            Preencha o formulário e conte para nós como seria a viagem dos
+            seus sonhos.
+          </p>
+        </div>
+        <!-- formulario de orcamento -->
+
+        <form id="formOrcamento" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" required />
+            <div class="invalid-feedback">Informe seu nome.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" required />
+            <div class="invalid-feedback">Informe um e-mail valido.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="destino" class="form-label">Destino</label>
+            <select id="destino" name="destino" class="form-select" required>
+              <option value="">Selecione</option>
+              <option>Manaus</option>
+              <option>Rio de Janeiro</option>
+              <option>Salvador</option>
+            </select>
+            <div class="invalid-feedback">Escolha um destino.</div>
+          </div>
+          <div class="col-md-3">
+            <label for="pessoas" class="form-label">Pessoas</label>
+            <input type="number" id="pessoas" name="pessoas" class="form-control" min="1" required />
+            <div class="invalid-feedback">
+              Informe a quantidade de pessoas.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="data" class="form-label">Data</label>
+            <input type="date" id="data" name="data" class="form-control" required />
+            <div class="invalid-feedback">Informe a data.</div>
+          </div>
+          <div class="col-12">
+            <label for="mensagem" class="form-label">Observacoes</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Conte um
+pouco sobre a viagem..."></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              Enviar orcamento
+            </button>
+          </div>
+          <div id="mensagemSucesso" class="alert alert-success d-none mt-3" role="alert">
+            Orcamento enviado com sucesso!
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section id="faq" class="secao">
+      <div class="container">
+        <div class="titulo-secao">
+          <section id="faq" class="secao">
+            <div class="container">
+              <div class="titulo-secao">
+                <span>FAQ</span>
+                <h2>Perguntas frequentes</h2>
+              </div>
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                      Posso montar um pacote personalizado?
+                    </button>
+                  </h2>
+                  <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Sim. A equipe pode adaptar destino, duracao e quantidade de pessoas.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq2">
+                      Quanto tempo leva para receber o orcamento?
+                    </button>
+                  </h2>
+                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      A equipe entra em contato depois do envio do formulario.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    </section>
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">© 2026 Explore o Mundo</p>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">FlyTech</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript do projeto -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
